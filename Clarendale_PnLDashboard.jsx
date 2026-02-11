@@ -5,8 +5,8 @@ import {
   ResponsiveContainer, ReferenceLine
 } from "recharts";
 
-const DATA_CSV_URL = "YOUR_DATA_SHEET_CSV_URL";
-const CONFIG_CSV_URL = "YOUR_CONFIG_SHEET_CSV_URL";
+const DATA_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSWcf6uBpyG_BbUPhaFKOWpoErgv92dJuDK48r9flSeDoT-v5HVcMDf7i4tRuN6xg/pub?gid=565339878&single=true&output=csv";
+const CONFIG_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSWcf6uBpyG_BbUPhaFKOWpoErgv92dJuDK48r9flSeDoT-v5HVcMDf7i4tRuN6xg/pub?gid=1443273409&single=true&output=csv";
 
 const N = {
   bg: "#191919", bgS: "#2F3437", bgC: "#252525",
