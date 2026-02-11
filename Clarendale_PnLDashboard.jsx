@@ -6,8 +6,8 @@ import {
 } from "recharts";
 
 /* ── URLS ── */
-var DATA_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSWcf6uBpyG_BbUPhaFKOWpoErgv92dJuDK48r9flSeDoT-v5HVcMDf7i4tRuN6xg/pub?gid=565339878&single=true&output=csv";
-var CONFIG_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSWcf6uBpyG_BbUPhaFKOWpoErgv92dJuDK48r9flSeDoT-v5HVcMDf7i4tRuN6xg/pub?gid=1443273409&single=true&output=csv";
+var DATA_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQNZN17mecydMZD952EExHyLieTgzgoVJUxqbrS8zmFBJToyWXLGAo0mCLpl972KZSYSoDi24X7XuwF/pub?gid=2124472305&single=true&output=csv";
+var CONFIG_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQNZN17mecydMZD952EExHyLieTgzgoVJUxqbrS8zmFBJToyWXLGAo0mCLpl972KZSYSoDi24X7XuwF/pub?gid=843547320&single=true&output=csv";
 
 var N = {
   bg: "#191919", bgS: "#2F3437", bgC: "#252525",
