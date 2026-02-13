@@ -186,8 +186,9 @@ export default function PnLDashboard() {
         setDataSrc("live");
         var months = []; var years = [];
         parsed.forEach(function(d) { if (d.month && months.indexOf(d.month) === -1) months.push(d.month); if (d.year && years.indexOf(d.year) === -1) years.push(d.year); });
-        if (months.length) setSelectedMonth(months[months.length - 1]);
-        if (years.length) setSelectedYear(years[years.length - 1]);
+        var currentMonth = new Date().toLocaleString("en-US", { month: "long" });
+setSelectedMonth(currentMonth);
+        setSelectedYear(String(new Date().getFullYear()));
       } else {
         setRawData(genDemo());
         setDataSrc("demo");
@@ -218,6 +219,7 @@ export default function PnLDashboard() {
     var filtered = rawData;
     if (selectedMonth && rawData.some(function(d) { return d.month; })) filtered = filtered.filter(function(d) { return d.month === selectedMonth; });
     if (selectedYear && rawData.some(function(d) { return d.year; })) filtered = filtered.filter(function(d) { return d.year === selectedYear; });
+    if (filtered.length > 1) filtered = filtered.slice(0, -1);
 
     // COG%: find value from any day in this month (set on last day)
     var cogPctEntry = null;
