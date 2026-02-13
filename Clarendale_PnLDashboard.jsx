@@ -219,7 +219,6 @@ setSelectedMonth(currentMonth);
     var filtered = rawData;
     if (selectedMonth && rawData.some(function(d) { return d.month; })) filtered = filtered.filter(function(d) { return d.month === selectedMonth; });
     if (selectedYear && rawData.some(function(d) { return d.year; })) filtered = filtered.filter(function(d) { return d.year === selectedYear; });
-    if (filtered.length > 1) filtered = filtered.slice(0, -1);
 
     // COG%: find value from any day in this month (set on last day)
     var cogPctEntry = null;
